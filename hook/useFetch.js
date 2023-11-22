@@ -16,9 +16,7 @@ const useFetch = (endpoint, query) => {
       'X-RapidAPI-Key': rapidApiKey,
       'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
     },
-    params: {
-      ...query
-    },
+    params: { ...query },
   };
   const fetchData = async () => {
     setIsLoading(true);
@@ -30,11 +28,11 @@ const useFetch = (endpoint, query) => {
       setIsLoading(false);
     } catch (error) {
       setError(error);
-      alert(error);
+      console.log(error)
     } finally {
       setIsLoading(false);
     }
-  }
+  };
 
   useEffect(() => {
     fetchData();

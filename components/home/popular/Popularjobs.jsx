@@ -1,8 +1,7 @@
-import useState from 'react';
+import { useState } from 'react';
+import { useRouter } from 'expo-router';
 import { View, Text, TouchableOpacity, FlatList, ActivityIndicator }
   from 'react-native';
-
-import { useRouter } from 'expo-router';
 
 import styles from './popularjobs.style'
 import { COLORS, SIZES } from '../../../constants';
@@ -17,8 +16,6 @@ const Popularjobs = () => {
       query: 'React developer',
       num_pages: 1
     })
-
-  // console.log('data: ', data);
 
   return (
     <View style={styles.container}>
@@ -35,7 +32,8 @@ const Popularjobs = () => {
           <Text>Something went wrong</Text>
         ) : (
           <FlatList
-            data={[1, 2, 3, 4]}
+            key='123'
+            data={data}
             renderItem={(item) => (
               <PopularJobCard
                 item={item}
