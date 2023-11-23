@@ -7,7 +7,7 @@ const COLORS = {
   gray2: "#C1C0C8",
 
   white: "#F3F4F8",
-  lightWhite: "#FAFAFC",
+  mainBgColor: "#rgb(234 252 246)",
 };
 
 const FONT = {

@@ -7,10 +7,10 @@ import { Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome } from '../components
 
 const Home = () => {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.mainBgColor }}>
       <Stack.Screen
         options={{
-          headerStyle: { backgroundColor: COLORS.lightWhite },
+          headerStyle: { backgroundColor: COLORS.mainBgColor },
           headerShadowVisible: false,
           headerLeft: () => (
             <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />

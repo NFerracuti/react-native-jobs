@@ -20,10 +20,10 @@ const Welcome = () => {
   const [activeJobType, setActiveJobType] = useState('Full-time');
 
   return (
-    <View>
+    <View style={styles.container}>
       <View style={styles.container}>
         <Text style={styles.userName}>Hello Nick</Text>
-        <Text style={styles.welcomeMessage}>Find your perfect job</Text>
+        <Text style={styles.welcomeMessage}>Find what you're looking for</Text>
       </View>
 
       <View style={styles.searchContainer}>
