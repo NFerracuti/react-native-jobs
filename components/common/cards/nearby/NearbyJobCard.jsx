@@ -5,7 +5,7 @@ import { checkImageURL } from "../../../../utils";
 
 const NearbyJobCard = (job, handleNavigate) => {
 
-  // console.log('data job: ', job.job);
+  console.log('data job: ', job.job);
   return (
     <TouchableOpacity
       style={styles.container}
@@ -26,6 +26,7 @@ const NearbyJobCard = (job, handleNavigate) => {
         <Text style={styles.jobName} numberOfLines={1}>
           {job.job.job_title}
         </Text>
+        {/* <Text style={styles.location}>{job.job.job_city}</Text> */}
         <Text style={styles.location}>{job.job.job_country}</Text>
       </View>
     </TouchableOpacity>
